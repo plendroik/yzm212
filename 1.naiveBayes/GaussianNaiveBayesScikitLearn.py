@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, confusion_matrix
 
-dataFrame = pd.read_csv("1.naiveBayes\yzm212\heart.csv")
+dataFrame = pd.read_csv(r"yzm212\1.naiveBayes\heart.csv")
 
 X = dataFrame.drop(columns=["target"])
 y = dataFrame["target"]
@@ -31,7 +31,7 @@ print(f"Test süresi: {testSuresi:.4f} saniye")
 karmasasiklikMatrisi = confusion_matrix(y_test, predictions)
 
 plt.figure(figsize=(6, 4))
-sns.heatmap(karmasasiklikMatrisi, annot=True, fmt="d", cmap="Blues", xticklabels=["Sağlıklı", "Hasta"], yticklabels=["Sağlıklı", "Hasta"])
+sns.heatmap(karmasasiklikMatrisi, annot=True, fmt="d", cmap="Reds", xticklabels=["Sağlıklı", "Hasta"], yticklabels=["Sağlıklı", "Hasta"])
 plt.xlabel("Tahmin")
 plt.ylabel("Gerçek")
 plt.title("Karmaşıklık Matrisi")
