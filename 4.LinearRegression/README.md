@@ -40,7 +40,7 @@ Bu çalışma, "Hours Studied" ve "Previous Scores" bağımsız değişkenlerini
 - Bu durum, her iki yöntemin de aynı kapalı formüle dayandığını göstermektedir:
 
   \[
-  \theta = (X^T X)^{-1} X^T y
+  θ = (X^T * X)^-1 * X^T * y
   \]
 
 Bu da manuel olarak gerçekleştirilen modelleme sürecinin doğru uygulandığını ve Scikit-learn kütüphanesiyle sağlanan otomatik optimizasyonla aynı sonucu verdiğini kanıtlamaktadır.
